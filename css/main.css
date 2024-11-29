@@ -35,20 +35,20 @@ section{
   margin: 0 auto;
 }
 #about .wrap ul li h3{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 800;
 }
 #about .wrap ul li:nth-child(2) p{  
-  font-size: 14px;
+  font-size: 18px;
 }
 #about .wrap ul li:nth-child(3) p{  
   line-height: 6;
-  font-size: 13px;
+  font-size: 16px;
   color: gray;
 }
 #about .wrap ul li:nth-child(4) p{  
   line-height: 1.2;
-  font-size: 15px;
+  font-size: 24px;
   padding: 20px 40px;
   background-color: white;
   border-radius: 50px;
@@ -65,10 +65,12 @@ section{
   font-size: 40px;
   font-weight: 800;
 }
+#skill .wrap div{
+  display: flex;
+}
 #skill .wrap ul{
   width: 230px;
   height: 250px;
-  float: left;
   text-align: center;
   margin: 0 20px;
   padding: 30px;
@@ -83,7 +85,7 @@ section{
 }
 #skill .wrap ul li h3{
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 24px;
 }
 #skill .wrap ul li img{
   
@@ -100,9 +102,14 @@ section{
   font-weight: 800;
   text-align: end;
 }
+#portfolio .wrap div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 #portfolio .wrap figure{
   display: flex;
-  justify-content: flex-end;
+  margin: 15px 20px;
 }
 #portfolio .wrap figure a{
   display: flex;
@@ -111,14 +118,30 @@ section{
   background-color: white;
   border-radius: 50px;
   border: 1px solid lightgrey;
-  width: fit-content;
+  width: 410px;
+  height: 100px;
 }
 #portfolio .wrap figure a img{
-  width: 300px;
+  width: 200px;
+  height: 100px;
+}
+#portfolio .wrap figure:nth-of-type(2) a img{
+  height: auto;
+}
+#portfolio .wrap figure:nth-of-type(3) a img{
+  height: auto;
+  width: auto;
+  margin: 0 30px;
+}
+#portfolio .wrap figure:nth-of-type(4) a img{
+  height: auto;
+  background: #dcdcdc;
+  border-radius: 30px;
 }
 #portfolio .wrap figure a p{
-  margin: 0 50px;
+  margin: 0 0 0 50px;
   color: black;
+  font-size: 20px;
 }
 #contact{
   background-color: whitesmoke;
@@ -140,6 +163,7 @@ section{
   border: 1px solid lightgrey;
   width: fit-content;
   margin: 0 auto;
+  font-size: 28px;
 }
 #contact .wrap address span{
   margin-left: 25px;

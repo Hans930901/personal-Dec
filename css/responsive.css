@@ -25,13 +25,21 @@
 /*  about  */
   #about .wrap ul{
     float: initial;
+    height: 100%;
   }
   #about .wrap ul li:nth-child(4) p{    
     word-break: keep-all;
+    font-size: calc(24px * 0.85);
+  }
+  #about .wrap ul li:nth-child(4) p span{
+    display: block;
   }
 /*  skill  */
   #skill .wrap h2{
     text-align: center;
+  }
+  #skill .wrap div{
+    flex-wrap: wrap;
   }
   #skill .wrap ul{    
     display: block;
@@ -47,19 +55,30 @@
   #portfolio .wrap h2{
     text-align: center;
   }
+  #portfolio .wrap div{
+    display: block;
+  }
   #portfolio .wrap figure a{
     flex-direction: column;
-    padding: 40px 10px;
+    padding: 60px 10px;
     margin: 0 auto;
+    height: 120px;
+  }
+  #portfolio .wrap figure a img{
+    
+  }
+  #portfolio .wrap figure a p{
+    margin: 20px 0;
   }
 /*  contact  */
   #contact .wrap address{
     width: auto;
+    font-size: calc(28px * 0.7);
   }
 /*  footer  */
   footer .wrap p{
     padding: 0 20px;
-    font-size: calc(16px * 0.8);
+    font-size: calc(20px * 0.8);
   }
   footer .wrap p span{
     display: block;
