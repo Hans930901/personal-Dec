@@ -13,3 +13,6 @@ http://scripts.sil.org/OFL
     font-weight: 400 1000;
     src: url("./Ownglyph/Ownglyph_ryurue-Rg.woff2") format("woff2");
 }
+body{
+    font-family: "Ownglyph";
+}
