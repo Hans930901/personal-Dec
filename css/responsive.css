@@ -14,11 +14,11 @@
     display: none;
   }
 /*  title  */
-  .title .wrap{    
+  #title .wrap{    
     padding: 0;
     height: 70vh;
   }
-  .title .wrap h1{    
+  #title .wrap h1{    
     font-size: calc(100px * 0.5);
     padding: 0 calc(100px * 0.2);
   }

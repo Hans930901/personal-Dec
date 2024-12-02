@@ -39,22 +39,34 @@
         });
     })
     </script>
+    <script>
+        $(document).ready(function(){
+            $("header nav ul li a").click(function(event){
+                event.preventDefault(); // 기본 링크 클릭 동작 방지
+                
+                var targetId = $(this).attr("href"); // 클릭한 링크의 href 값 (예: '#about', '#skill', etc.)
+                $('html, body').animate({
+                    scrollTop: $(targetId).offset().top // 해당 섹션으로 스크롤
+                }, 1000); // 1초 동안 부드럽게 스크롤
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- header -->
      <header>
         <nav>
-            <h1><a href="">HS</a></h1>
+            <h1><a href="#title">HS</a></h1>
             <ul>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SKILL</a></li>
-                <li><a href="">PORTFOLIO</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
      </header>
     <!-- title -->
-    <div class="title">
+    <div id="title">
         <div class="wrap">
             <h1>My Vision Drawn in Code</h1>
             <video src="./video/kakaotalk_1591533138367 (online-video-cutter.com).mp4" autoplay="" muted="" loop=""></video>
